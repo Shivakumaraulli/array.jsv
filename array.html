@@ -1,0 +1,40 @@
+<!--
+    1)FIND THE PRODUCT
+    const Find_Prod = (array, N) => 
+{
+ let result = 1;
+ for (let i = 0; i < n; i++){
+   result = result * array[i];
+  return result;
+ }
+
+};
+    2)FIND THE SUM
+    const Find_Sum = (array, N) => 
+{
+  let sum = 0;
+  for (let i=0; i<array.length; i++){
+    sum += array[i];
+  } return sum;
+};
+    3)BIRTHDAY GAME
+    function Birthday_Game(arr,D ,M) {
+ counter = 0;
+ for(let i = 0; i < arr.length; i++){
+  const sequence = arr.splice(i, i+M);
+  const sum = sequence.reduce( (a, b) => a + b, 0);
+  if (sum ===D){
+    counter++;
+  }return counter;
+ }
+}
+    4)UNIQUE COLOR SHIRT
+   function Unique_Shirts (arr,N) {
+ const arrCopy = [...arr];
+ const distinctColors = arr.filter(color  => {arr.indexOf(color) === arr.lastIndexOf(color)});
+ return distinctColors.length;
+ 
+}
+
+
+-->
